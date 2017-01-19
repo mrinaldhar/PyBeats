@@ -12,7 +12,7 @@ def soundplot(stream):
 	data = np.fromstring(stream.read(CHUNK),dtype=np.int16)
 	print colors[random.randint(0, len(colors)-1)] + ':'*abs(int(np.median(data)))
 	# print colors[random.randint(0, len(colors)-1)] + '|'*np.sqrt(np.mean(np.square(data)))
-	# print colors[random.randint(0, len(colors)-1)] + '|'*30*np.log(abs(int(np.median(data)))+0.001)
+	#print colors[random.randint(0, len(colors)-1)] + '|'*30*np.log(abs(int(np.median(data)))+0.001)
 
 if __name__=="__main__":
 	p=pyaudio.PyAudio()
